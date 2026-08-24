@@ -19,7 +19,7 @@ Welcome to Java.
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T14:22:42.093Z  
+**Submitted:** 2026-08-24T14:22:44.060Z  
 
 ```cpp
 class Codechef {
