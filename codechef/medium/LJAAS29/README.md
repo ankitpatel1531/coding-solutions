@@ -1,0 +1,33 @@
+# LJAAS29
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
+
+## Problem
+
+- Declare two integer variables x and y, and assign $20$ to x and $6$ to y.
+- Divide x by y (i.e., perform integer division x / y) and print the result.
+
+## Solution
+
+**Language:** Java  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-08-24T13:11:48.581Z  
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        
+        int x= 20;
+        int y = 6;
+        System.out.println(x/y);
+        // Write your code here 
+        
+    }
+}
+
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/LJAAS29)
