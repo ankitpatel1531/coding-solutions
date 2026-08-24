@@ -8,7 +8,7 @@ public class Main
         int num;
         num = scanner.nextInt(); // input first number
         // Check first number
-        if (num>0)
+        if (num>=0)
             System.out.println("Positive");
         
         
