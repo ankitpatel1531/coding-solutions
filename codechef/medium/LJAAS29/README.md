@@ -12,7 +12,7 @@
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T13:11:48.581Z  
+**Submitted:** 2026-08-24T13:11:54.120Z  
 
 ```java
 public class Main {
