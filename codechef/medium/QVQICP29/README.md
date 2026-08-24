@@ -4,16 +4,24 @@
 
 ## Problem
 
-_Description not available._
+### Greeting Message
+
+A Java developer wants to print the following output exactly as shown, with each line on a new line, using the `print()` and `println()` methods:
+
+```
+Hello, World!
+Welcome to Java.
+
+```
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T14:12:28.075Z  
+**Submitted:** 2026-08-24T14:12:45.879Z  
 
-```java
+```cpp
 class Codechef {
     public static void main(String[] args) {
         
