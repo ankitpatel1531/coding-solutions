@@ -27,7 +27,7 @@ Negative
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T13:28:44.898Z  
+**Submitted:** 2026-08-24T13:29:02.878Z  
 
 ```java
 import java.util.Scanner;
@@ -40,7 +40,7 @@ public class Main
         int num;
         num = scanner.nextInt(); // input first number
         // Check first number
-        if (num>0)
+        if (num>=0)
             System.out.println("Positive");
         
         
