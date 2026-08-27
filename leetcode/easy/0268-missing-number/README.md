@@ -62,8 +62,8 @@ Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, ret
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-08-27T19:06:02.865Z  
+**Memory:** 42.2 MB  
+**Submitted:** 2026-08-27T19:06:27.845Z  
 
 ```java
 class Solution {
@@ -76,11 +76,7 @@ class Solution {
             sum = sum + nums[i];
             
         }
-        if(sum>0){
-            int m = totalsum - sum;
-            return m;
-        }
-        return -1;
+        return totalsum-sum;
         
 
         /*
