@@ -8,11 +8,7 @@ class Solution {
             sum = sum + nums[i];
             
         }
-        if(sum>0){
-            int m = totalsum - sum;
-            return m;
-        }
-        return -1;
+        return totalsum-sum;
         
 
         /*
