@@ -35,9 +35,9 @@ Explanation: [4,9] is also accepted.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 5 ms (beats 24.60%)  
-**Memory:** 45 MB (beats 55.70%)  
-**Submitted:** 2026-08-26T02:04:46.193Z  
+**Runtime:** 0 ms  
+**Memory:** 43.2 MB  
+**Submitted:** 2026-08-27T08:12:42.889Z  
 
 ```java
 class Solution {
