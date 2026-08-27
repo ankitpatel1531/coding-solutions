@@ -3,8 +3,8 @@ class Solution {
         int n = arr.length;
         HashSet<Integer> set = new HashSet<>();
         
-        for(int m: arr){
-            set.add(m);
+        for(int i=0;i<n; i++){
+            set.add(arr[i]);
         }
         for (int i = 1; i <= n+1; i++) {
             if (!set.contains(i)) {
