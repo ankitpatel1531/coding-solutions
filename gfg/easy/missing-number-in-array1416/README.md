@@ -37,11 +37,34 @@ Explanation: Only 1 is present so the missing element is 2.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-27T08:50:01.701Z  
+**Submitted:** 2026-08-27T18:51:32.384Z  
 
 ```java
 class Solution {
     int missingNum(int arr[]) {
+        int n = arr.length;
+        HashSet<Integer> set = new HashSet<>();
+        
+        for(int m: arr){
+            set.add(m);
+        }
+        for (int i = 1; i <= n+1; i++) {
+            if (!set.contains(i)) {
+                return i;
+            }
+        }
+
+        return -1 ;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+/*
         int n = arr.length;
         int xor=n+1;
         
@@ -50,6 +73,7 @@ class Solution {
         }
         return xor;
         // code here
+        */
         
     }
 }
