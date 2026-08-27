@@ -62,17 +62,18 @@ Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, ret
 
 **Language:** Java  
 **Runtime:** 5 ms (beats 22.04%)  
-**Memory:** 47.1 MB (beats 82.37%)  
-**Submitted:** 2026-08-27T08:52:10.645Z  
+**Memory:** 47.6 MB (beats 14.30%)  
+**Submitted:** 2026-08-27T18:55:01.498Z  
 
 ```java
 class Solution {
     public int missingNumber(int[] nums) {
+
         int n = nums.length;
 
         HashSet<Integer> set = new HashSet<>();
-        for (int num : nums) {
-            set.add(num);
+        for (int i=0;i<n;i++) {
+            set.add(nums[i]);
         }
         for (int i = 0; i <= n; i++) {
             if (!set.contains(i)) {
@@ -81,17 +82,16 @@ class Solution {
         }
 
         return -1;
-       
-       
-       /*
-        Arrays.sort(nums);
 
+        /*
+        Arrays.sort(nums);
+        
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != i) {
                 return i;
             }
         }
-
+        
         return nums.length;
         */
 
