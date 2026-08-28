@@ -52,8 +52,8 @@ You can rotate the array by x = 0 positions (i.e. no rotation) to make nums.
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43.1 MB (beats 46.91%)  
-**Submitted:** 2026-08-28T17:36:25.751Z  
+**Memory:** 43 MB (beats 65.10%)  
+**Submitted:** 2026-08-28T17:36:50.940Z  
 
 ```java
 class Solution {
