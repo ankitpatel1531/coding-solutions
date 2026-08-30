@@ -57,9 +57,9 @@ Explanation: Only products 1 and 3 are both low fat and recyclable.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 549 ms (beats 71.83%)  
+**Runtime:** 546 ms (beats 73.46%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-08-30T18:55:26.823Z  
+**Submitted:** 2026-08-30T18:55:42.940Z  
 
 ```sql
 # Write your MySQL query statement below
