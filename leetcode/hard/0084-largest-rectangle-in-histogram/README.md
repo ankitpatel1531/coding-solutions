@@ -37,8 +37,8 @@ Output: 4
 
 **Language:** Java  
 **Runtime:** 68 ms (beats 63.55%)  
-**Memory:** 78.2 MB (beats 49.97%)  
-**Submitted:** 2026-08-31T17:09:20.129Z  
+**Memory:** 78.5 MB (beats 29.70%)  
+**Submitted:** 2026-08-31T17:09:33.714Z  
 
 ```java
 import java.util.Stack;
