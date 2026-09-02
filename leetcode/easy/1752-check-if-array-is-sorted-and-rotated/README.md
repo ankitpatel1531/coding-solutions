@@ -51,28 +51,66 @@ You can rotate the array by x = 0 positions (i.e. no rotation) to make nums.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43.3 MB (beats 12.19%)  
-**Submitted:** 2026-08-28T17:37:30.543Z  
+**Runtime:** 2 ms (beats 4.83%)  
+**Memory:** 43 MB (beats 46.72%)  
+**Submitted:** 2026-09-02T20:17:06.225Z  
 
 ```java
 class Solution {
     public boolean check(int[] nums) {
+        int n = nums.length;
 
-        int count = 0;
+        int[] sorted = new int[n];
 
-        for (int i = 0; i < nums.length; i++) {
+        for (int r = 0; r < n; r++) {
+            int idx = 0;
 
-            if (nums[i] > nums[(i + 1) % nums.length]) {
-                count++;
+            for (int i = r; i < n; i++) {
+                sorted[idx] = nums[i];
+                idx++;
             }
 
-            if (count > 1) {
-                return false;
+            for (int i = 0; i < r; i++) {
+                sorted[idx] = nums[i];
+                idx++;
+            }
+            // check if sorted;
+            boolean isSorted = true;
+            for (int i = 0; i < n - 1; i++) {
+                if (sorted[i] > sorted[i + 1]) {
+                    isSorted = false;
+                    break;
+                }
+            }
+
+            if (isSorted) {
+                return true;
             }
         }
 
-        return true;
+        return false;
+    
+
+
+
+
+// class Solution {
+//     public boolean check(int[] nums) {
+
+//         int count = 0;
+
+//         for (int i = 0; i < nums.length; i++) {
+
+//             if (nums[i] > nums[(i + 1) % nums.length]) {
+//                 count++;
+//             }
+
+//             if (count > 1) {
+//                 return false;
+//             }
+//         }
+
+//         return true;
 
 
 
