@@ -45,7 +45,7 @@ Explanation: [9,4] is also accepted.
 **Language:** Java  
 **Runtime:** 4 ms (beats 48.95%)  
 **Memory:** 44.4 MB (beats 98.06%)  
-**Submitted:** 2026-09-03T22:29:35.196Z  
+**Submitted:** 2026-09-03T22:36:10.929Z  
 
 ```java
 class Solution {
@@ -54,12 +54,12 @@ class Solution {
         int[] vis = new int[nums2.length];
         ArrayList<Integer> list = new ArrayList<>();
 
-        for(int i=0;i<nums1.length;i++){
+        for (int i = 0; i < nums1.length; i++) {
             // if(list.contains(nums1[i])) {
             //     continue;
             // }    
-            for(int j=0;j<nums2.length;j++){
-                if(nums1[i]==nums2[j] && vis[j]==0 ){
+            for (int j = 0; j < nums2.length; j++) {
+                if (nums1[i] == nums2[j] && vis[j] == 0) {
                     list.add(nums1[i]);
                     vis[j] = 1;
                     break;
@@ -67,9 +67,10 @@ class Solution {
             }
         }
         int[] ans = new int[list.size()];
-        for(int i =0;i<list.size();i++){
+        for (int i = 0; i < list.size(); i++) {
             ans[i] = list.get(i);
-        }return ans;      
+        }
+        return ans;
     }
 }
 ```
