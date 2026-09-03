@@ -35,9 +35,9 @@ Explanation: [4,9] is also accepted.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 6 ms (beats 20.02%)  
-**Memory:** 44.4 MB (beats 95.49%)  
-**Submitted:** 2026-09-02T09:28:23.055Z  
+**Runtime:** 0 ms  
+**Memory:** 43 MB  
+**Submitted:** 2026-09-03T22:29:58.112Z  
 
 ```java
 class Solution {
@@ -47,9 +47,9 @@ class Solution {
         ArrayList<Integer> list = new ArrayList<>();
 
         for(int i=0;i<nums1.length;i++){
-            if(list.contains(nums1[i])) {
-                continue;
-            }    
+            // if(list.contains(nums1[i])) {
+            //     continue;
+            // }    
             for(int j=0;j<nums2.length;j++){
                 if(nums1[i]==nums2[j] && vis[j]==0 ){
                     list.add(nums1[i]);
