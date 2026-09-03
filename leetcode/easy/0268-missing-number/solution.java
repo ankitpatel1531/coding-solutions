@@ -1,7 +1,7 @@
 class Solution {
     public int missingNumber(int[] nums) {
 
-        int n = nums.length-1;
+        int n = nums.length;
         int sum = 0;
         int totalsum = n * (n + 1) / 2;
         for (int i = 0; i < n; i++) {
@@ -24,6 +24,8 @@ class Solution {
         
         return -1;
         */
+
+        
         /*
         Arrays.sort(nums);
         
