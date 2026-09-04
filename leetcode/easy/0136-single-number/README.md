@@ -39,20 +39,56 @@ You must implement a solution with a linear runtime complexity and use only co
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 99.93%)  
-**Memory:** 47 MB (beats 46.00%)  
-**Submitted:** 2026-09-04T00:09:11.581Z  
+**Runtime:** 13 ms (beats 19.82%)  
+**Memory:** 46.9 MB (beats 46.00%)  
+**Submitted:** 2026-09-04T00:21:15.274Z  
 
 ```java
+// class Solution {
+//     public int singleNumber(int[] nums) {
+//         int xor=0;
+//         for(int i =0;i<nums.length;i++){
+//             xor = xor^nums[i];
+//         }
+//         return xor;
+
+//     }
+// }
 class Solution {
     public int singleNumber(int[] nums) {
-        int xor=0;
 
-        for(int i =0;i<nums.length;i++){
-            xor = xor^nums[i];
+        HashMap<Long, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            long x = nums[i];
+
+            // map.put(x, map.getOrDefault(x, 0) + 1);
+
+            //or
+
+            // if (map.containsKey(x)) {
+            //     map.put(x, map.get(x) + 1);
+            // } else {
+            //     map.put(x, 1);
+            // }
+
+            // or
+            Integer count = map.get(x);
+
+            if (count == null) {
+                map.put(x, 1);
+            } else {
+                map.put(x, count + 1);
+            }
         }
-        return xor;
-        
+
+        for (long x : map.keySet()) {
+            if (map.get(x) == 1) {
+                return (int) x;
+            }
+        }
+
+        return -1;
     }
 }
 ```
