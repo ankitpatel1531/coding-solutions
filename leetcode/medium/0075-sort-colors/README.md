@@ -47,9 +47,9 @@ The array has one each of 0, 1, and 2, arranged in-place in the order 0, 1, 2.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-09-05T11:21:52.054Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 43.7 MB (beats 22.97%)  
+**Submitted:** 2026-09-05T11:22:35.414Z  
 
 ```java
 class Solution {
@@ -57,7 +57,7 @@ class Solution {
         int low =0;
         int mid = 0;
         int high = nums.length-1;
-        while(low<= high){
+        while(mid<= high){
             if(nums[mid] ==0){
                 int temp = nums[low];
                 nums[low] = nums[mid];
