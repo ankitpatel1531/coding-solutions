@@ -37,11 +37,28 @@ Explanation: No pair is possible as only one element is present in arr[]
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-05T10:19:58.155Z  
+**Submitted:** 2026-09-05T10:23:45.221Z  
 
 ```java
 class Solution {
     boolean twoSum(int arr[], int target) {
+        
+        HashSet<Integer> set = new HashSet<>();
+        
+        for(int x:arr){
+            int required = target-x;
+            
+            if(set.contains(required)){
+                return true;
+            }
+            set.add(x);
+        }
+        return false;
+        
+        
+        
+        
+        /*
         HashMap<Integer, Integer> map = new HashMap<>();
         
         for(int i =0;i<arr.length;i++){
@@ -55,7 +72,7 @@ class Solution {
             map.put(x,i);
         }
         return false;
-        
+        */
         
         
         
