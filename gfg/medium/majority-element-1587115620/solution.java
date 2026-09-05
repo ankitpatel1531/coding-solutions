@@ -1,13 +1,18 @@
 class Solution {
 	int majorityElement(int arr[]) {
-	    // Step 1: Find the candidate
+	    
+     // Boyer–Moore Majority Vote Algorithm (also called Moore's Voting Algorithm).
+    //  is used to find an element that appears more than n/2 times in an array.
+     // optimal O(n) time and O(1) space.
+     
+	    
              int candidate = 0;
              int count = 0;
 
              for (int i = 0; i < arr.length; i++) {
 
                  if (count == 0) {
-                     candidate = arr[i];
+                     candidate = arr[i];      //Find the candidate
                  }
 
                  if (arr[i] == candidate) {
@@ -17,17 +22,17 @@ class Solution {
                  }
              }
 
-             // Step 2: Verify the candidate
+             
              int frequency = 0;
 
              for (int i = 0; i < arr.length; i++) {
-                 if (arr[i] == candidate) {
+                 if (arr[i] == candidate) {         //Verify the candidate
                      frequency++;
                  }
              }
 
-             // Step 3: Check if candidate is actually majority
-             if (frequency > arr.length / 2) {
+             
+             if (frequency > arr.length / 2) {      //Check if candidate is actually majority
                  return candidate;
              }
 
