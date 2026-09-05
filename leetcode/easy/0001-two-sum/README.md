@@ -53,9 +53,9 @@ Output: [0,1]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 99.36%)  
-**Memory:** 47.2 MB (beats 40.91%)  
-**Submitted:** 2026-09-05T23:10:03.465Z  
+**Runtime:** 0 ms  
+**Memory:** 42.9 MB  
+**Submitted:** 2026-09-05T23:10:42.573Z  
 
 ```java
 class Solution {
@@ -66,7 +66,7 @@ class Solution {
         
         for (int i=0; i<nums.length; i++){
             
-            if(!map.isEmpty() && map.containsKey(nums[i])){
+            if(map.containsKey(nums[i])){
                 result[0] = map.get(nums[i]);
                 result[1] = i;
                 
