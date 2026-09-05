@@ -1,5 +1,22 @@
 class Solution {
     boolean twoSum(int arr[], int target) {
+        
+        HashSet<Integer> set = new HashSet<>();
+        
+        for(int x:arr){
+            int required = target-x;
+            
+            if(set.contains(required)){
+                return true;
+            }
+            set.add(x);
+        }
+        return false;
+        
+        
+        
+        
+        /*
         HashMap<Integer, Integer> map = new HashMap<>();
         
         for(int i =0;i<arr.length;i++){
@@ -13,7 +30,7 @@ class Solution {
             map.put(x,i);
         }
         return false;
-        
+        */
         
         
         
