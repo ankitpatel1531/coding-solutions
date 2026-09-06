@@ -8,10 +8,10 @@ class Solution {
         for(int i =0;i<n;i++){
             sum += arr[i];
             
-            max= Math.max(max,sum);
-            // if(sum>0){
-            //     max = sum;
-            // }
+            // max= Math.max(max,sum);
+            if(sum>max){
+                max = sum;
+            }
             
             if(sum<0){
                 sum =0;
