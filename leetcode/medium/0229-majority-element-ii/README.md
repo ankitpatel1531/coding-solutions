@@ -46,9 +46,9 @@ Output: [1,2]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 14 ms (beats 43.40%)  
-**Memory:** 53.2 MB (beats 10.66%)  
-**Submitted:** 2026-09-05T11:57:05.474Z  
+**Runtime:** 16 ms (beats 21.76%)  
+**Memory:** 53.3 MB (beats 10.64%)  
+**Submitted:** 2026-09-10T16:59:02.620Z  
 
 ```java
 class Solution {
@@ -70,34 +70,7 @@ class Solution {
         
     }
 }
-// import java.util.*;
 
-// class Solution {
-//     public List<Integer> majorityElement(int[] nums) {
-
-//         int n = nums.length;
-
-//         HashMap<Integer, Integer> map = new HashMap<>();
-
-//         // Count frequency
-//         for (int i = 0; i < n; i++) {
-
-//             map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
-//         }
-
-//         // Find elements appearing more than n/3 times
-//         List<Integer> result = new ArrayList<>();
-
-//         for (int key : map.keySet()) {
-
-//             if (map.get(key) > n / 3) {
-//                 result.add(key);
-//             }
-//         }
-
-//         return result;
-//     }
-// }
 ```
 
 ---
